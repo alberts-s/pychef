@@ -3,7 +3,7 @@ import collections
 from chef.base import ChefObject
 from chef.exceptions import ChefError
 
-class NodeAttributes(collections.MutableMapping):
+class NodeAttributes(collections.abc.MutableMapping):
     """A collection of Chef :class:`~chef.Node` attributes.
 
     Attributes can be accessed like a normal python :class:`dict`::
